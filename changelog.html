@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<!--
+            LOGARR Changelog
+    https://github.com/Monitorr/logarr
+-->
+
+<!-- changelog.html -->
+
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+
+        <link rel="manifest" href="webmanifest.json">
+
+        <meta name="description" content="Logarr">
+        <!-- <meta name="robots" content="NOINDEX, NOFOLLOW"> -->
+
+        <link rel="icon" type="image/png" href="favicon.png">
+        <link rel="shortcut icon" type="image/x-icon" href="favicon.ico">
+
+        <link rel="stylesheet" href="assets/css/bootstrap.min.css">
+        <link rel="stylesheet" href="assets/css/font-awesome.min.css">
+        <link rel="stylesheet" href="assets/css/vendor/jquery-ui.min.css">
+        <link rel="stylesheet" href="assets/css/logarr.css">
+        <link rel="stylesheet" href="assets/data/custom.css">
+
+        <meta name="theme-color" content="#464646">
+        <meta name="theme_color" content="#464646">
+
+        <title> Logarr | Releases </title>
+
+        <style>
+            body {
+                margin-top: 0;
+            }
+
+            .fa-plus {
+                color: lightgreen;
+            }
+
+            .fa-pencil-alt {
+                color: yellow;
+            }
+
+            .fa-wrench {
+                color: yellow;
+            }
+        </style>
+
+        <script src="assets/js/jquery.min.js"></script>
+        <script src="assets/js/vendor/sweetalert2.min.js"></script>
+        <script src="assets/js/vendor/jquery-ui.min.js"></script>
+        <script src="assets/js/logarr.main.js" async></script>
+
+    </head>
+
+    <body id="release" onload="checkGithub()">
+
+        <script>
+            document.body.className += ' fade-out';
+            $(function () {
+                $('body').removeClass('fade-out');
+            });
+        </script>
+
+        <div id="releaseWrapper">
+
+            <div class="releaseHeader">
+                <a class="releaselink" href="https://github.com/Monitorr/Logarr/releases" target="_blank" title="Logarr Releases">
+                    Logarr Releases:
+                </a>
+            </div>
+
+            <div id="about">
+                <ul id="versionHistory"></ul>
+            </div>
+
+        </div>
+
+        <div id="footer" class="releaseFooter">
+            <div id="logarrid">
+                <a href="https://github.com/monitorr/logarr" title="Logarr GitHub repo" target="_blank" class="footer">Logarr
+                </a> |
+                <a href="https://github.com/monitorr/logarr/releases" title="Logarr releases" target="_blank" class="footer"> Releases </a>
+                <br>
+            </div>
+        </div>
+
+        <script>
+            $(function() {
+                $(document).tooltip({
+                    hide: {
+                        effect: "fadeOut",
+                        duration: 200
+                    },
+                });
+            });
+        </script>
+
+        <script>
+            $(window).blur(function() {
+                $('a').blur();
+            });
+        </script>
+
+    </body>
+
+</html>

@@ -1,0 +1,86 @@
+{
+  "type": "object",
+  "required": false,
+  "properties": {
+    "rfconfig": {
+      "type": "integer",
+      "required": true,
+      "default": 15000,
+      "minimum": 1000,
+      "exclusiveMinimum": true,
+      "properties": {}
+    },
+	"rftime": {
+      "type": "integer",
+      "required": true,
+      "default": 60000,
+      "minimum": 1000,
+      "exclusiveMinimum": true,
+      "properties": {}
+    },
+	"rflog": {
+      "type": "integer",
+      "required": true,
+      "default": 30000,
+      "minimum": 3000,
+      "exclusiveMinimum": true,
+      "properties": {}
+    },
+    "maxLines": {
+      "type": "integer",
+      "required": true,
+      "default": 2000,
+      "minimum": 1,
+      "exclusiveMinimum": true,
+      "properties": {}
+    },
+    "customHighlightTerms": {
+      "type": "string",
+      "properties": {}
+    },
+	"logRefresh": {
+      "type": "string",
+      "enum": [
+        "true",
+        "false"
+      ],
+      "required": true,
+      "pattern": {},
+      "default": "false",
+      "properties": {}
+    },
+    "autoHighlight": {
+      "type": "string",
+      "enum": [
+        "true",
+        "false"
+      ],
+      "required": true,
+      "pattern": {},
+      "default": "true",
+      "properties": {}
+    },
+    "jumpOnSearch": {
+      "type": "string",
+      "enum": [
+        "true",
+        "false"
+      ],
+      "required": true,
+      "pattern": {},
+      "default": "true",
+      "properties": {}
+    },
+    "liveSearch": {
+      "type": "string",
+      "enum": [
+        "true",
+        "false"
+      ],
+      "required": true,
+      "pattern": {},
+      "default": "false",
+      "properties": {}
+    }
+  }
+}
