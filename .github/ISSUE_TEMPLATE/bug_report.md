@@ -1,38 +1,24 @@
 ---
 name: Bug report
 about: Create a report to help us improve
-title: ''
-labels: ''
-assignees: ''
+title: "[BUG:] / [Describe problem] / OS & web server if applicable"
+labels: 'bug'
+assignees: seanvree
 
 ---
 
-**Describe the bug**
-A clear and concise description of what the bug is.
+## Your environment:
 
-**To Reproduce**
-Steps to reproduce the behavior:
-1. Go to '...'
-2. Click on '....'
-3. Scroll down to '....'
-4. See error
+- **Operating system**:   Windows 10P x65 build: 1709
 
-**Expected behavior**
-A clear and concise description of what you expected to happen.
+- **Webserver**:          NGINX v. 3.8
 
-**Screenshots**
-If applicable, add screenshots to help explain your problem.
+- **PHP Version**:        7.2.1 x64 NTS
 
-**Desktop (please complete the following information):**
- - OS: [e.g. iOS]
- - Browser [e.g. chrome, safari]
- - Version [e.g. 22]
+- **Monitorr Version**:   5.30m  (in the footer of the Logarr UI)
 
-**Smartphone (please complete the following information):**
- - Device: [e.g. iPhone6]
- - OS: [e.g. iOS8.1]
- - Browser [e.g. stock browser, safari]
- - Version [e.g. 22]
+- **Browser used**:       Chrome Version 75.88 (Official Build) (64-bit)
 
-**Additional context**
-Add any other context about the problem here.
+## Describe your issue:
+
+Before submitting this issue, please read the Wiki at: https://github.com/Monitorr/Logarr/wiki/
